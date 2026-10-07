@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apa7-reference-agent"
+version = "0.2.0"
+description = "A conservative APA 7 reference verification CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "APA 7 Reference Agent contributors"}]
+dependencies = []
+
+[project.optional-dependencies]
+documents = ["pypdf>=5.0", "python-docx>=1.1"]
+web = ["fastapi>=0.115", "uvicorn[standard]>=0.32", "python-multipart>=0.0.12"]
+all = ["pypdf>=5.0", "python-docx>=1.1", "fastapi>=0.115", "uvicorn[standard]>=0.32", "python-multipart>=0.0.12"]
+dev = ["pytest>=8.0", "httpx>=0.27"]
+
+[project.scripts]
+apa7-ref = "apa7_agent.cli:main"
+apa7-ref-web = "apa7_agent.web.app:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+apa7_agent = ["web/static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

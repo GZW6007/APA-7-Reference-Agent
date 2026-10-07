@@ -1,0 +1,9 @@
+Example paper
+
+References
+
+Brin, S., & Page, L. (1998). The anatomy of a large-scale hypertextual Web search engine. Computer Networks and ISDN Systems, 30(1–7), 107–117. doi:10.1016/S0169-7552(98)00110-X.
+
+American Psychological Association. (2020). Publication manual of the American Psychological Association (7th ed.). American Psychological Association.
+
+Unknown, A. (n.d.). A source that cannot be verified locally. Example Publisher.

@@ -1,0 +1,8 @@
+Article title
+
+References
+
+Smith, J. A., & Doe, R. (2020). A useful article. Testing Journal, 5(2), 10–20. doi:10.1234/example.1.
+
+Brown, T. (2019). A book with no DOI. Example Press.
+
